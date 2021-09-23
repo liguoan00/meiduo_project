@@ -1,3 +1,8 @@
+# -*- coding:utf-8 -*-
+
+#正式环境配置文件
+
+
 """
 Django settings for meiduo_mall project.
 
