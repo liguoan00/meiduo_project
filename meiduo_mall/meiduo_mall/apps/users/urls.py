@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 """meiduo_mall URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,8 +17,11 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
+from . import views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^',include(('users.urls','users2'),namespace='users1')),
+    #注册页面
+    url(r'register/',views.RegisterView.as_view(),name='register')
 ]
